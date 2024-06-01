@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-bgColor: #f4f4f4;
+  --text-light-color: #777777;
+  --text-bold-color: #555555;
+  --other-color: #772fd3;
+  --input-select-border-color: #bbbbbb;
+  --light-color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./img/bg.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 400px;
+  max-width: 90vw;
+  margin-block: 16px;
+  margin-inline: auto;
+  background-color: var(--main-bgColor);
+  border-radius: 20px;
+  padding: 20px 24px 23px 24px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-light-color);
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+
+select,
+input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--input-select-border-color);
+  background-color: var(--light-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-bold-color);
+  border-radius: 4px;
+  padding-left: 18px;
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid var(--input-select-border-color);
+}
+
+option {
+  font-size: 18px;
+}
+
+input {
+  box-shadow: 2px 2px 5px 0px #00000026;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  margin-top: 23px;
+  border-radius: 5px;
+  background-color: var(--other-color);
+  border: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--light-color);
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+button:focus {
+  outline: 2px solid var(--other-color);
+}
+
+section:last-of-type {
+  border: 1px solid var(--other-color);
+  margin-top: 36px;
+  border-radius: 20px;
+  padding-block: 12px;
+  align-items: center;
+  gap: 14px;
+}
+
+section div {
+  text-align: center;
+}
+
+section div p:first-of-type {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-light-color);
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+main section div p:last-of-type {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--text-bold-color);
+}
